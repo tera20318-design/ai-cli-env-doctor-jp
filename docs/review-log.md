@@ -29,6 +29,29 @@ A Chrome ChatGPT Pro review request was sent with a concise repository summary a
 
 No application or README claim is based on an unretrieved external review. The concrete changes above are based on locally verified code review findings and validation results.
 
+## 2026-06-02
+
+### Chrome GPT Pro Extend Review Retrieved
+
+The shorter Chrome ChatGPT Pro review conversation was later retrieved from `https://chatgpt.com/c/6a1d9f13-69b0-8324-bcc3-0925718189eb`.
+
+Critical items from that review:
+
+- Make the repository public and verify that the application links to the actual public repository.
+- Ensure GitHub Actions passes on the public default branch.
+
+Both critical items were satisfied before application drafting:
+
+- Public repository: `https://github.com/tera20318-design/ai-cli-env-doctor-jp`
+- GitHub Actions CI passed on Ubuntu and Windows for Python 3.10, 3.11, and 3.12 on the public default branch.
+
+Important items addressed after retrieving the review:
+
+- Added explicit exit-code documentation for normal and `--strict` runs.
+- Added a threat model and limitations section to README.
+- Added a sanitized JSON example under `examples/`.
+- Updated release notes from draft wording and recorded `twine check` plus built-wheel smoke verification.
+
 ### Publication And CI
 
 - Public repository: `https://github.com/tera20318-design/ai-cli-env-doctor-jp`

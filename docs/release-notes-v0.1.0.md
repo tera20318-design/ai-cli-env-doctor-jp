@@ -1,4 +1,4 @@
-# v0.1.0 Release Notes Draft
+# v0.1.0 Release Notes
 
 Initial MVP release of `ai-cli-env-doctor-jp`.
 
@@ -18,6 +18,8 @@ Initial MVP release of `ai-cli-env-doctor-jp`.
 - `mypy src tests`
 - `pytest`
 - `python -m build`
+- `twine check dist/*`
+- built wheel smoke test in GitHub Actions
 
 ## Notes
 
