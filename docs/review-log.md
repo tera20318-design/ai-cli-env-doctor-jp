@@ -32,6 +32,5 @@ No application or README claim is based on an unretrieved external review. The c
 ### Publication And CI
 
 - Public repository: `https://github.com/tera20318-design/ai-cli-env-doctor-jp`
-- Latest verified commit during this review: `b21f78a`
-- GitHub Actions CI run `26764654396` passed on Ubuntu and Windows for Python 3.10, 3.11, and 3.12.
+- GitHub Actions CI passed on Ubuntu and Windows for Python 3.10, 3.11, and 3.12 during publication review.
 - The CI run still emitted GitHub-hosted runner annotations about Node.js 20 action deprecation and `windows-latest` migration. These were warnings/notices, not test failures.
