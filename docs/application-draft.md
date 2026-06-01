@@ -2,13 +2,34 @@
 
 ## English Application Text
 
-ai-cli-env-doctor-jp is a new OSS Python CLI for read-only local AI/CLI setup diagnostics for Japanese developers. v0.1.0 checks Python, Git, Node/npm, uv, Codex CLI, PowerShell, and PATH; outputs Japanese text or JSON; and uses only the Python standard library at runtime. The repo is configured for ruff, mypy, pytest, build, GitHub Actions CI, docs, and a roadmap. It is not on PyPI yet and has no adoption metrics.
+ai-cli-env-doctor-jp is a new OSS Python CLI for read-only local AI/CLI setup diagnostics for Japanese developers. v0.1.0 checks Python, Git, Node/npm, uv, Codex CLI, PowerShell, and PATH; outputs Japanese text or JSON; and uses only the Python standard library at runtime. The public repo has tests, docs, a roadmap, and GitHub Actions passing on Linux/Windows for Python 3.10-3.12. It is not on PyPI yet and has no adoption metrics.
 
-Character count: 418
+Character count: 434
+
+## Repository Facts
+
+- GitHub username: `tera20318-design`
+- Repository URL: `https://github.com/tera20318-design/ai-cli-env-doctor-jp`
+- Role: primary maintainer
+- Public repository: yes
+- PyPI publication: no
+- Adoption metrics: none claimed
+
+## Qualifications Field Draft
+
+This is a new, small project, so it has no adoption metrics yet. Its value is practical: read-only Japanese diagnostics for common AI/CLI setup issues, with JSON output for support/CI and documented privacy limits. It is scoped for ongoing maintenance through additional checks and test fixtures.
+
+Character count: 296
+
+## API Credits Usage Draft
+
+I would use API credits to test maintainer workflows for this small OSS repo: issue and bug report triage, CI failure summarization, release note drafting, and generating localized examples for Japanese developers. I would not use credits to create fake activity or inflated adoption metrics.
+
+Character count: 292
 
 ## Japanese Intent Note
 
-この申請文は、実績を盛らずに「何を作ったか」「誰の役に立つか」「現在どこまで実装済みか」を正直に伝えるためのものです。未公開・未普及であることを明示しつつ、読み取り専用チェック、日本語出力、JSON対応、標準ライブラリのみの実行時依存、テストとCI整備を説明しています。
+この申請文は、実績を盛らずに「何を作ったか」「誰の役に立つか」「現在どこまで実装済みか」を正直に伝えるためのものです。新しく公開したばかりで未普及であることを明示しつつ、読み取り専用チェック、日本語出力、JSON対応、標準ライブラリのみの実行時依存、テストとCI整備を説明しています。
 
 ## Fact-Check Checklist
 
