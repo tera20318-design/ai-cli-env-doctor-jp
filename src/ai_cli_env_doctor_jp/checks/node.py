@@ -38,6 +38,13 @@ def _command_status(
             (f"終了コード: {result.returncode}",),
         )
     version = version_text(result)
+    if not version:
+        return (
+            Status.WARNING,
+            evidence,
+            f"{title} は見つかりましたが、バージョン文字列を取得できませんでした。",
+            ("コマンドは終了コード 0 を返しましたが、stdout/stderr が空でした。",),
+        )
     return Status.OK, (*evidence, Evidence(f"{title}_version", version)), f"{title}: {version}", ()
 
 

@@ -37,7 +37,7 @@ Windowsでは `npm.cmd` / `codex.cmd` を優先して検出します。PowerShel
 ```bash
 git clone https://github.com/tera20318-design/ai-cli-env-doctor-jp.git
 cd ai-cli-env-doctor-jp
-python -m pip install -e .
+python -m pip install .
 ```
 
 開発用ツールも入れる場合:

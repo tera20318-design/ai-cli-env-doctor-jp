@@ -30,3 +30,18 @@ def test_node_missing_when_npm_missing() -> None:
 
     assert result.status == Status.NOT_FOUND
     assert "npm が見つかりません" in result.details[1]
+
+
+def test_node_warns_when_version_output_is_empty() -> None:
+    which = FakeWhich({"node": "/usr/bin/node", "npm": "/usr/bin/npm"})
+    runner = QueueRunner(
+        [
+            CommandResult(("node", "--version"), 0),
+            CommandResult(("npm", "--version"), 0, stdout="10.0.0"),
+        ]
+    )
+
+    result = node.run(runner=runner, which=which, platform_system="Linux")
+
+    assert result.status == Status.WARNING
+    assert "node は見つかりましたが" in result.details[0]
