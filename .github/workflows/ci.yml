@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install package and dev dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Format check
+        run: ruff format --check .
+      - name: Lint
+        run: ruff check .
+      - name: Typecheck
+        run: mypy src tests
+      - name: Test
+        run: pytest
+      - name: CLI smoke
+        run: |
+          python -m ai_cli_env_doctor_jp --check python --json
+          ai-cli-env-doctor-jp --check python
+          ai-cli-env-doctor-jp --version
+      - name: Build
+        run: python -m build
+      - name: Check package metadata
+        run: python -m twine check dist/*
+      - name: Install built wheel smoke
+        run: |
+          python -c "from pathlib import Path; import subprocess, sys; wheel = next(Path('dist').glob('*.whl')); subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--force-reinstall', str(wheel)])"
+          ai-cli-env-doctor-jp --version
