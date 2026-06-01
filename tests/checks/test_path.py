@@ -8,12 +8,12 @@ from ai_cli_env_doctor_jp.models import Status
 
 def test_path_ok() -> None:
     sep = os.pathsep
-    existing = {"C:/bin", "C:/tools"}
+    existing = {"/bin", "/tools"}
 
     result = path.run(
-        environ={"PATH": sep.join(["C:/bin", "C:/tools"])},
+        environ={"PATH": sep.join(["/bin", "/tools"])},
         is_dir=lambda value: value in existing,
-        platform_system="Windows",
+        platform_system="Linux",
     )
 
     assert result.status == Status.OK
@@ -23,8 +23,8 @@ def test_path_warns_for_duplicate_missing_and_empty() -> None:
     sep = os.pathsep
 
     result = path.run(
-        environ={"PATH": sep.join(["C:/bin", "", "c:/BIN", "C:/missing"])},
-        is_dir=lambda value: value.lower() == "c:/bin",
+        environ={"PATH": sep.join(["/Tools/Bin", "", "/tools/bin", "/missing"])},
+        is_dir=lambda value: value.lower() == "/tools/bin",
         platform_system="Windows",
     )
 
