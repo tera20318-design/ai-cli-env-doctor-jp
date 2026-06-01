@@ -28,3 +28,10 @@ Issues addressed from those reviews:
 A Chrome ChatGPT Pro review request was sent with a concise repository summary and explicit honesty constraints. The long full-repository prompt and the shorter follow-up both entered a long "thinking/finalizing" state during this run, and the final assistant review text could not be retrieved through the browser automation before timeout.
 
 No application or README claim is based on an unretrieved external review. The concrete changes above are based on locally verified code review findings and validation results.
+
+### Publication And CI
+
+- Public repository: `https://github.com/tera20318-design/ai-cli-env-doctor-jp`
+- Latest verified commit during this review: `b21f78a`
+- GitHub Actions CI run `26764654396` passed on Ubuntu and Windows for Python 3.10, 3.11, and 3.12.
+- The CI run still emitted GitHub-hosted runner annotations about Node.js 20 action deprecation and `windows-latest` migration. These were warnings/notices, not test failures.
