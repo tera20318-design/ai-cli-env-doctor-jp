@@ -2,9 +2,9 @@
 
 ## English Application Text
 
-ai-cli-env-doctor-jp is a new OSS Python CLI for read-only local AI/CLI setup diagnostics for Japanese developers. v0.1.0 checks Python, Git, Node/npm, uv, Codex CLI, PowerShell, and PATH; outputs Japanese text or JSON; and uses only the Python standard library at runtime. The public repo has tests, docs, a roadmap, and GitHub Actions passing on Linux/Windows for Python 3.10-3.12. It is not on PyPI yet and has no adoption metrics.
+ai-cli-env-doctor-jp is a new OSS Python CLI for read-only local AI/CLI setup diagnostics for Japanese developers. v0.1.0 checks Python, Git, Node/npm, uv, Codex CLI, PowerShell, and PATH; outputs Japanese text or JSON; and uses only the Python standard library at runtime. The public repo has tests, docs, a roadmap, a GitHub v0.1.0 release, and passing GitHub Actions on Linux/Windows for Python 3.10-3.12. It is not on PyPI yet and has no adoption metrics.
 
-Character count: 434
+Character count: 459
 
 ## Repository Facts
 
@@ -12,6 +12,7 @@ Character count: 434
 - Repository URL: `https://github.com/tera20318-design/ai-cli-env-doctor-jp`
 - Role: primary maintainer
 - Public repository: yes
+- GitHub release: `v0.1.0`
 - PyPI publication: no
 - Adoption metrics: none claimed
 
