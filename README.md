@@ -32,11 +32,9 @@ Windowsでは `npm.cmd` / `codex.cmd` を優先して検出します。PowerShel
 
 ## Installation
 
-まだPyPIには公開していません。GitHubで公開後は、次のように取得してローカルインストールできます。
-公開前にこのREADMEを読んでいる場合、下記のclone URLはまだ解決できない可能性があります。
+まだPyPIには公開していません。GitHubから取得してローカルインストールできます。
 
 ```bash
-# 公開後に有効になる想定URLです
 git clone https://github.com/tera20318-design/ai-cli-env-doctor-jp.git
 cd ai-cli-env-doctor-jp
 python -m pip install -e .

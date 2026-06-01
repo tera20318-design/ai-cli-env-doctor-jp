@@ -8,7 +8,7 @@ This is a new project. Security fixes are handled on the latest released version
 
 Please open a GitHub issue with a minimal reproduction unless the report includes sensitive information. Do not paste full diagnostic output if it includes private paths, usernames, tokens, internal hostnames, or other sensitive values.
 
-After the public repository exists, use GitHub's private vulnerability reporting feature if it is enabled. If it is not available, open a minimal issue that does not include sensitive details and ask for a private contact path.
+Use GitHub's private vulnerability reporting feature if it is enabled. If it is not available, open a minimal issue that does not include sensitive details and ask for a private contact path.
 
 ## Security Notes
 
